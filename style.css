@@ -1,0 +1,111 @@
+body{
+  display: grid;
+  margin: 0px;
+  gap: 60px;
+  background-color: #F7F7F7;
+  font-family: Arial;
+  justify-items: center;
+}
+
+p {
+  font-size: 20px;
+  margin: 0px;
+}
+
+h2{
+  font-size: 2em;
+}
+
+h3{
+  margin: 0px;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.descricao{
+  display: grid;
+  background: #ffffff;
+  padding: 40px;
+  gap: 20px;
+  align-content: center;
+  justify-items: end;
+  text-align: right;
+}
+
+.botao{
+  color: #ffffff;
+  text-decoration: none;
+  background: #EE2211;
+  padding: 15px 30px;
+  border-radius: 4px;
+}
+
+.bicicleta{
+  width: 100%;
+}
+
+.vantagensTexto{
+  font-size: 64px;
+  font-weight: bold;
+  color: #c6c6c6;
+  align-self: center;
+  text-align: right;
+  padding: 40px;
+}
+
+.vantagens{
+  background: #ffffff;
+  padding: 40px;
+}
+
+.vantegensItem{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.vantagemDescricao{
+  grid-column: 2;
+  margin: 0px;
+}
+
+.menu{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menuItem{
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #000000;
+  background: #ffffff;
+}
+
+.item{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.rodape{
+  background: #ffffff;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  padding: 40px;
+}
+
+.detalhe{
+  width: 60px;
+  height: 4px;
+  background: #e21;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
