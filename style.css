@@ -1,73 +1,96 @@
 body{
   display: grid;
-  margin: 0px;
-  margin-top: 60px;
-  gap: 60px;
+  margin: 0rem;
+  margin-top: 3.75rem;
+  gap: 3.75rem;
   background-color: #F7F7F7;
   font-family: Arial;
   justify-items: center;
 }
 
 h1, h2, h3{
-  margin: 0px;
+  margin: 0rem;
 }
 
 p {
-  font-size: 20px;
-  margin: 0px;
+  font-size: 1.25rem;
+  margin: 0rem;
 }
 
 h2{
-  font-size: 2em;
+  font-size: 2rem;
+}
+
+.header{
+  display: grid;
+  justify-items: center;
+  gap: 3.75rem;
 }
 
 .menu{
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   flex-wrap: wrap;
   justify-content: center;
+  list-style: none;
 }
 
 .menu a{
-  padding: 15px 30px;
+  padding: 0.9375rem 1.875rem;
   text-decoration: none;
   color: #000000;
   background: #ffffff;
-  border-radius: 4px;
+  border-radius: 0.25rem;
+  border: 0.125rem solid transparent;
 }
 
-.item{
+.menu a:hover{
+  border-color: #EE2211;
+}
+
+main{
+  display: grid;
+  grid-auto-rows: auto;
+  max-width: 62.5rem;
+}
+
+.conteudo{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1000px;
 }
 
-.descricao{
+.tituloArtigo::before{
+  content: "";
+  display: block;
+  position: relative;
+  justify-self: right;
+  width: 3.75rem;
+  height: 0.25rem;
+  background: #EE2211;
+  top: -2.5rem;
+  right: -22.5rem;
+}
+
+.introdução{
   display: grid;
   background: #ffffff;
-  padding: 40px;
-  gap: 20px;
+  padding: 2.5rem;
+  gap: 1.25rem;
   align-content: center;
   justify-items: end;
   text-align: right;
-  position: relative;
 }
 
 .botao{
   color: #ffffff;
   text-decoration: none;
   background: #EE2211;
-  padding: 15px 30px;
-  border-radius: 4px;
+  padding: 0.9375rem 1.875rem;
+  border-radius: 0.25rem;
 }
 
-.detalhe{
-  width: 60px;
-  height: 4px;
-  background: #EE2211;
-  position: absolute;
-  top: 30px;
-  right: -30px;
+.botao:hover{
+  background: #AA2211; 
 }
 
 .bicicleta{
@@ -75,35 +98,50 @@ h2{
 }
 
 .vantagensTitulo{
-  font-size: 64px;
+  font-size: 4rem;
   color: rgba(0, 0, 0, 0.2);
   align-self: center;
   text-align: right;
-  padding: 40px;
+  padding: 2.5rem;
   text-transform: uppercase;
+  background-image: url(./img/onda.svg);
 }
 
-.vantagens{
+.vantagensLista{
+  margin: 0rem;
   background: #ffffff;
-  padding: 40px;
+  padding: 2.5rem;
 }
 
-.vantegensItem{
+.vantagensLista li:nth-child(odd){
+  background: #F7F7F7;
+}
+
+.vantagensItem{
+  position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 10px 20px;
-  padding: 20px;
+  gap: 0.625rem 1.25rem;
+  padding: 1.25rem;
+}
+
+.vantagensItem:hover::before{
+  position: absolute;
+  content: "";
+  background: #EE2211;
+  height: 100%;
+  width: 0.25rem;
 }
 
 .vantagemDescricao{
   grid-column: 2;
-  margin: 0px;
+  margin: 0rem;
 }
 
 .rodape{
   background: #ffffff;
-  bottom: 0px;
+  bottom: 0rem;
   text-align: center;
   width: 100%;
-  padding: 40px 0px;
+  padding: 2.5rem 0rem;
 }
